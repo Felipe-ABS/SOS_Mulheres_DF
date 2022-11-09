@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'SOS Mulheres DF',
-        theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-        ),
-        home: const MenuPage(title: 'Menu'));
+      title: 'SOS Mulheres DF',
+      theme: ThemeData(primarySwatch: Colors.pink),
+      home: const MenuPage(
+        title: "Menu",
+      ),
+    );
   }
 }

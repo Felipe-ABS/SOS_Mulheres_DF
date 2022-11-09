@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../screens/codigos.dart';
+import '../screens/menu.dart';
+
 class AppDrawer extends StatelessWidget {
   const AppDrawer({Key? key}) : super(key: key);
 
@@ -23,7 +26,10 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              debugPrint("Teste Drawer");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const CodePage()),
+              );
             },
           ),
           const Divider(),
@@ -45,25 +51,21 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              debugPrint("Teste Drawer");
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.shield),
-            title: const Text(
-              'Delegacias especializadas em defesa das mulheres',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {
-              debugPrint("Teste Drawer");
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MenuPage(
+                    title: 'Menu',
+                  ),
+                ),
+              );
             },
           ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.balance),
             title: const Text(
-              'Lei Maria da Penha',
+              'Leis a favor das mulheres',
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
