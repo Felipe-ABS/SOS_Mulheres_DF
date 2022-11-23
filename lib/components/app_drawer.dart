@@ -33,7 +33,7 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              Navigator.popAndPushNamed(context, "/codigos");
+              Navigator.popAndPushNamed(context, "/addCodigos");
             },
           ),
           const Divider(),

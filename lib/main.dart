@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sos_mulheres/screens/codigos.dart';
 import 'package:sos_mulheres/screens/leis.dart';
 import 'package:sos_mulheres/screens/menu.dart';
+import 'package:sos_mulheres/screens/telefones.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const MenuPage(title: "menu"),
         '/leis': (context) => const LeiPage(),
-        '/codigos': (context) => const CodePage(),
+        '/addCodigos': (context) => const AddCodePage(),
+        '/telefones': (context) => const TelephonePage(),
       },
     );
   }
