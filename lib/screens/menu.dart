@@ -41,7 +41,7 @@ class MenuPage extends StatelessWidget {
                     width: 135,
                     height: 135,
                     child: Icon(
-                      Icons.add,
+                      Icons.content_paste_search,
                       size: 50,
                     ),
                   ),
@@ -112,7 +112,9 @@ class MenuPage extends StatelessWidget {
                     color: Colors.pink, // Button color
                     child: InkWell(
                       splashColor: Colors.pinkAccent, // Splash color
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.popAndPushNamed(context, '/informacoes');
+                      },
                       child: SizedBox(
                         width: 135,
                         height: 135,
