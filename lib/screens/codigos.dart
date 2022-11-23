@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../components/app_drawer.dart';
 
 class CodePage extends StatelessWidget {
@@ -17,6 +16,7 @@ class CodePage extends StatelessWidget {
           child: Column(
             children: [
               TextFormField(
+                textAlign: TextAlign.center,
                 decoration: const InputDecoration(labelText: 'Código'),
               ),
               ElevatedButton(

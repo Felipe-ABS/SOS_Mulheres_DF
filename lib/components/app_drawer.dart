@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../screens/codigos.dart';
+import '../screens/leis.dart';
 import '../screens/menu.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -12,9 +13,15 @@ class AppDrawer extends StatelessWidget {
       child: Column(
         children: [
           AppBar(
-            title: const Text(
-              'Descumprimento de medida protetiva É CRIME',
-              style: TextStyle(fontSize: 16),
+            title: RichText(
+              textAlign: TextAlign.center,
+              text: const TextSpan(
+                text: "Descumprimento de medida protetiva É CRIME",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
             ),
             automaticallyImplyLeading: false,
           ),
@@ -26,10 +33,7 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const CodePage()),
-              );
+              Navigator.popAndPushNamed(context, "/codigos");
             },
           ),
           const Divider(),
@@ -51,25 +55,18 @@ class AppDrawer extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const MenuPage(
-                    title: 'Menu',
-                  ),
-                ),
-              );
+              Navigator.popAndPushNamed(context, "/");
             },
           ),
           const Divider(),
           ListTile(
             leading: const Icon(Icons.balance),
             title: const Text(
-              'Leis a favor das mulheres',
+              'Principais Leis',
               style: TextStyle(fontSize: 16),
             ),
             onTap: () {
-              debugPrint("Teste Drawer");
+              Navigator.popAndPushNamed(context, "/leis");
             },
           ),
         ],

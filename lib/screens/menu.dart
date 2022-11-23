@@ -17,43 +17,74 @@ class MenuPage extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            ClipOval(
-              child: Material(
-                color: Colors.pink, // Button color
-                child: InkWell(
-                  splashColor: Colors.pinkAccent, // Splash color
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const CodePage()),
-                    );
-                  },
-                  child: const SizedBox(
-                      width: 135, height: 135, child: Icon(Icons.add)),
+            Container(
+              height: 135,
+              width: 135,
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 5.0,
+                      offset: Offset(3, 3),
+                      spreadRadius: 5.0)
+                ],
+              ),
+              child: ClipOval(
+                child: Material(
+                  color: Colors.pink, // Button color
+                  child: InkWell(
+                    splashColor: Colors.pinkAccent, // Splash color
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CodePage()),
+                      );
+                    },
+                    child: const SizedBox(
+                        width: 135, height: 135, child: Icon(Icons.add)),
+                  ),
                 ),
               ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                ClipOval(
-                  child: Material(
-                    color: Colors.pink, // Button color
-                    child: InkWell(
-                      splashColor: Colors.pinkAccent, // Splash color
-                      onTap: () {},
-                      child: SizedBox(
-                        width: 135,
-                        height: 135,
-                        child: Center(
-                          child: RichText(
-                            textAlign: TextAlign.center,
-                            text: const TextSpan(
-                              text: "Denúncia",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
+                Container(
+                  height: 135,
+                  width: 135,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          offset: Offset(3, 3),
+                          spreadRadius: 5.0)
+                    ],
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.pink, // Button color
+                      child: InkWell(
+                        splashColor: Colors.pinkAccent, // Splash color
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 135,
+                          height: 135,
+                          child: Center(
+                            child: RichText(
+                              textAlign: TextAlign.center,
+                              text: const TextSpan(
+                                text: "Denúncia",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
@@ -62,24 +93,39 @@ class MenuPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                ClipOval(
-                  child: Material(
-                    color: Colors.pink, // Button color
-                    child: InkWell(
-                      splashColor: Colors.pinkAccent, // Splash color
-                      onTap: () {},
-                      child: SizedBox(
-                        width: 135,
-                        height: 135,
-                        child: Center(
-                          child: RichText(
-                            textAlign: TextAlign.center,
-                            text: const TextSpan(
-                              text: "Informações",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
+                Container(
+                  height: 135,
+                  width: 135,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          offset: Offset(3, 3),
+                          spreadRadius: 5.0)
+                    ],
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.pink, // Button color
+                      child: InkWell(
+                        splashColor: Colors.pinkAccent, // Splash color
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 135,
+                          height: 135,
+                          child: Center(
+                            child: RichText(
+                              textAlign: TextAlign.center,
+                              text: const TextSpan(
+                                text: "Informações",
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
@@ -93,24 +139,39 @@ class MenuPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                ClipOval(
-                  child: Material(
-                    color: Colors.pink, // Button color
-                    child: InkWell(
-                      splashColor: Colors.pinkAccent, // Splash color
-                      onTap: () {},
-                      child: SizedBox(
-                        width: 135,
-                        height: 135,
-                        child: Center(
-                          child: RichText(
-                            textAlign: TextAlign.center,
-                            text: const TextSpan(
-                              text: "Telefones de Emergência",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
+                Container(
+                  height: 135,
+                  width: 135,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          offset: Offset(3, 3),
+                          spreadRadius: 5.0)
+                    ],
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.pink, // Button color
+                      child: InkWell(
+                        splashColor: Colors.pinkAccent, // Splash color
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 135,
+                          height: 135,
+                          child: Center(
+                            child: RichText(
+                              textAlign: TextAlign.center,
+                              text: const TextSpan(
+                                text: "Telefones de Emergência",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),
@@ -119,24 +180,39 @@ class MenuPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                ClipOval(
-                  child: Material(
-                    color: Colors.pink, // Button color
-                    child: InkWell(
-                      splashColor: Colors.pinkAccent, // Splash color
-                      onTap: () {},
-                      child: SizedBox(
-                        width: 135,
-                        height: 135,
-                        child: Center(
-                          child: RichText(
-                            textAlign: TextAlign.center,
-                            text: const TextSpan(
-                              text: "Solicitar Medida Protetiva Online",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w500,
-                                color: Colors.black,
+                Container(
+                  height: 135,
+                  width: 135,
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          blurRadius: 5.0,
+                          offset: Offset(3, 3),
+                          spreadRadius: 5.0)
+                    ],
+                  ),
+                  child: ClipOval(
+                    child: Material(
+                      color: Colors.pink, // Button color
+                      child: InkWell(
+                        splashColor: Colors.pinkAccent, // Splash color
+                        onTap: () {},
+                        child: SizedBox(
+                          width: 135,
+                          height: 135,
+                          child: Center(
+                            child: RichText(
+                              textAlign: TextAlign.center,
+                              text: const TextSpan(
+                                text: "Solicitar Medida Protetiva Online",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                ),
                               ),
                             ),
                           ),

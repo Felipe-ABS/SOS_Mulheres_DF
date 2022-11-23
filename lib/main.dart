@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:sos_mulheres/screens/codigos.dart';
+import 'package:sos_mulheres/screens/leis.dart';
 import 'package:sos_mulheres/screens/menu.dart';
 
 void main() {
@@ -13,9 +15,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'SOS Mulheres DF',
       theme: ThemeData(primarySwatch: Colors.pink),
-      home: const MenuPage(
-        title: "Menu",
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MenuPage(title: "menu"),
+        '/leis': (context) => const LeiPage(),
+        '/codigos': (context) => const CodePage(),
+      },
     );
   }
 }
